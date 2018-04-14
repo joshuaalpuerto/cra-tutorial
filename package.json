@@ -12,12 +12,39 @@
     "redux": "3.7.2"
   },
   "scripts": {
+    "prettier": "npx prettier --write \"src/**/*.js\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "prettier": "1.12.0"
+    "babel-eslint": "8.2.3",
+    "eslint": "4.19.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "npx": "^10.2.0",
+    "prettier": "1.12.0",
+    "prettier-eslint": "8.8.1"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+      "react",
+      "jsx-a11y",
+      "import",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }
