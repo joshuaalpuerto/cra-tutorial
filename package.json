@@ -27,13 +27,13 @@
     "travis-deploy-once": "^5.0.0"
   },
   "scripts": {
-    "commit": "git-cz",
+    "gc": "git-cz",
     "precommit": "lint-staged",
     "prettier": "npx prettier --write \"src/**/*.js\"",
     "lint:eslint": "npx prettier --write",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "cross-env CI=true  react-scripts test --env=jsdom",
+    "test": "cross-env CI=true NODE_PATH=src/ react-scripts test --env=jsdom",
     "test:watch": "react-scripts test",
     "eject": "react-scripts eject",
     "travis-deploy-once": "travis-deploy-onrce",
