@@ -36,7 +36,6 @@
     "test": "cross-env CI=true NODE_PATH=src/ react-scripts test --env=jsdom",
     "test:watch": "react-scripts test",
     "eject": "react-scripts eject",
-    "travis-deploy-once": "travis-deploy-onrce",
     "semantic-release": "semantic-release"
   },
   "lint-staged": {
